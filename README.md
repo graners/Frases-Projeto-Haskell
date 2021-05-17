@@ -1,2 +1,1 @@
-# haskell-projeto
-Trabalho de Haskell - FATEC RL
+# Trabalho de Haskell - FATEC RL

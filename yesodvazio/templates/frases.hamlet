@@ -1,0 +1,18 @@
+<h1>
+    Frases
+
+<a href=@{HomeR}>
+    Home
+
+<ul>
+    <li>
+        <p>
+            Só sei que nada sei. (Sócrates)
+
+    <li>
+        <p>
+            A esperança é o sonho do homem acordado. (Aristóteles)
+
+    <li>
+        <p>
+            Não espere por uma crise para descobrir o que é importante em sua vida. (Platão)

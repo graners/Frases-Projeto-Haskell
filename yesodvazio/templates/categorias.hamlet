@@ -1,0 +1,20 @@
+<h1>
+    Categorias
+
+<a href=@{HomeR}>
+    Home
+
+<br>
+
+<ul>
+    <li>
+        <a>
+            Frases Inteligentes
+
+    <li>
+        <a>
+            Frases de Reflexão
+
+    <li>
+        <a>
+            Frases Motivacionais

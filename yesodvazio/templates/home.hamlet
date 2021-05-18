@@ -1,18 +1,23 @@
 <h1>
-    OLA MUNDO!
-
-<button onclick="ola()">
-    OK
+    RECADOS QUE INSPIRAM
 
 <ul>
     <li>
-        <a href=@{Page1R}>
-           Pagina 1
+        <a href=@{HomeR}>
+            Home
 
     <li>
-        <a href=@{Page2R}>
-           Pagina 2
+        <a href=@{CategoriasR}>
+           Categorias
 
     <li>
-        <a href=@{Page3R}>
-           Pagina 3
+        <a href=@{AutoresR}>
+           Autores
+
+    <li>
+        <a href=@{FrasesR}>
+           Frases
+
+    <li>
+        <a href=@{AdmR}>
+            Adm

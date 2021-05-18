@@ -12,31 +12,25 @@ import Text.Julius
 --import Network.HTTP.Types.Status
 --import Database.Persist.Postgresql
 
-getPage1R :: Handler Html
-getPage1R = do
+getCategoriasR :: Handler Html
+getCategoriasR = do
     defaultLayout $ do
-        [whamlet|
-            <h1>
-                PAGINA 1
+        $(whamletFile "templates/categorias.hamlet")
 
-            <img src=@{StaticR img_smile_jpg}>
-        |]
-
-getPage2R :: Handler Html
-getPage2R = do
+getAutoresR :: Handler Html
+getAutoresR = do
     defaultLayout $ do
-        [whamlet|
-            <h1>
-                PAGINA 2
-        |]
+        $(whamletFile "templates/autores.hamlet")
 
-getPage3R :: Handler Html
-getPage3R = do
+getFrasesR :: Handler Html
+getFrasesR = do
     defaultLayout $ do
-        [whamlet|
-            <h1>
-                PAGINA 3
-        |]
+        $(whamletFile "templates/frases.hamlet")
+
+getAdmR :: Handler Html
+getAdmR = do
+    defaultLayout $ do
+        $(whamletFile "templates/adm.hamlet")
 
 
 getHomeR :: Handler Html

@@ -1,6 +1,4 @@
 img {
-    max-width:200px;
-    max-height:150ps;
-    width: auto;
-    height: auto;
+    max-width:90px;
+    max-height:70ps;
 }

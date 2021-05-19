@@ -11,9 +11,11 @@
                 Sócrates
 
     <li>
-        <a>
-            Aristóteles
+        <img src=@{StaticR img_aristoteles_jpg}>
+            <a>
+                Aristóteles
 
     <li>
-        <a>
-            Platão
+        <img src=@{StaticR img_platao_jpg}>
+            <a>
+                Platão

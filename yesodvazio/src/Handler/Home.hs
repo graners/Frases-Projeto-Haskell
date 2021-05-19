@@ -21,6 +21,7 @@ getAutoresR :: Handler Html
 getAutoresR = do
     defaultLayout $ do
         $(whamletFile "templates/autores.hamlet")
+        toWidgetHead $(luciusFile "templates/autores.lucius")
 
 getFrasesR :: Handler Html
 getFrasesR = do

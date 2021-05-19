@@ -1,0 +1,6 @@
+img {
+    max-width:200px;
+    max-height:150ps;
+    width: auto;
+    height: auto;
+}

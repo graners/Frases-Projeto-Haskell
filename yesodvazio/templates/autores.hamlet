@@ -6,8 +6,9 @@
 
 <ul>
     <li>
-        <a>
-            Sócrates
+        <img src=@{StaticR img_socrates_jpg}>
+            <a>
+                Sócrates
 
     <li>
         <a>

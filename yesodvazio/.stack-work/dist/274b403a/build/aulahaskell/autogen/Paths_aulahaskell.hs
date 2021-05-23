@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "C:\\Users\\steff\\Desktop\\Haskell\\recados-projeto-haskell\\projeto\\yesodvazio\\.stack-work\\install\\c937affd\\bin"
-libdir     = "C:\\Users\\steff\\Desktop\\Haskell\\recados-projeto-haskell\\projeto\\yesodvazio\\.stack-work\\install\\c937affd\\lib\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0-J4gQfHFtUXd1QFijXEZhSf-aulahaskell"
-dynlibdir  = "C:\\Users\\steff\\Desktop\\Haskell\\recados-projeto-haskell\\projeto\\yesodvazio\\.stack-work\\install\\c937affd\\lib\\x86_64-windows-ghc-8.10.4"
-datadir    = "C:\\Users\\steff\\Desktop\\Haskell\\recados-projeto-haskell\\projeto\\yesodvazio\\.stack-work\\install\\c937affd\\share\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
-libexecdir = "C:\\Users\\steff\\Desktop\\Haskell\\recados-projeto-haskell\\projeto\\yesodvazio\\.stack-work\\install\\c937affd\\libexec\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
-sysconfdir = "C:\\Users\\steff\\Desktop\\Haskell\\recados-projeto-haskell\\projeto\\yesodvazio\\.stack-work\\install\\c937affd\\etc"
+bindir     = "C:\\Users\\steff\\Desktop\\Haskell\\Projeto-Haskell\\Frases-Projeto-Haskell\\yesodvazio\\.stack-work\\install\\c937affd\\bin"
+libdir     = "C:\\Users\\steff\\Desktop\\Haskell\\Projeto-Haskell\\Frases-Projeto-Haskell\\yesodvazio\\.stack-work\\install\\c937affd\\lib\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0-J4gQfHFtUXd1QFijXEZhSf-aulahaskell"
+dynlibdir  = "C:\\Users\\steff\\Desktop\\Haskell\\Projeto-Haskell\\Frases-Projeto-Haskell\\yesodvazio\\.stack-work\\install\\c937affd\\lib\\x86_64-windows-ghc-8.10.4"
+datadir    = "C:\\Users\\steff\\Desktop\\Haskell\\Projeto-Haskell\\Frases-Projeto-Haskell\\yesodvazio\\.stack-work\\install\\c937affd\\share\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
+libexecdir = "C:\\Users\\steff\\Desktop\\Haskell\\Projeto-Haskell\\Frases-Projeto-Haskell\\yesodvazio\\.stack-work\\install\\c937affd\\libexec\\x86_64-windows-ghc-8.10.4\\aulahaskell-0.0.0"
+sysconfdir = "C:\\Users\\steff\\Desktop\\Haskell\\Projeto-Haskell\\Frases-Projeto-Haskell\\yesodvazio\\.stack-work\\install\\c937affd\\etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "aulahaskell_bindir") (\_ -> return bindir)

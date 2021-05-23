@@ -7,4 +7,5 @@
 /categorias CategoriasR GET
 /autores AutoresR GET
 /frases FrasesR GET
+/cliente ClienteR GET POST
 /adm AdmR GET

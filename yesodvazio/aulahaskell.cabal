@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 6537ca6062982535efd6d0bd7c2915348deef708871fef2cc9ae0f7079ad09c2
+-- hash: 8bb0b66f6c930581034af5f016e33ed29e662696c93c998dcc60ad94fcd2ca78
 
 name:           aulahaskell
 version:        0.0.0
@@ -24,7 +24,9 @@ library
   exposed-modules:
       Application
       Foundation
+      Handler.Autor
       Handler.Calculos
+      Handler.Cliente
       Handler.Common
       Handler.Home
       Import

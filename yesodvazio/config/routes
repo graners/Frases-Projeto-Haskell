@@ -9,3 +9,7 @@
 /frases FrasesR GET
 /cliente ClienteR GET POST
 /adm AdmR GET
+
+/adm/cadastro/autor AutorR GET POST
+/adm/cadastro/categoria CategoriaR GET POST
+/adm/cadastro/frase FraseR GET POST

@@ -9,3 +9,13 @@ Cliente
 Autor
     autor Text
     deriving Show
+
+Categoria
+    categoria Text
+    deriving Show
+
+Frase
+    frase Text
+    idAutor Int
+    idCategoria Int
+    deriving Show

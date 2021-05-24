@@ -7,3 +7,35 @@
 module Handler.Autor where
 
 import Import
+
+formAutor :: Form Autor
+formAutor = renderDivs $ Autor
+    <$> areq textField "Autor:" Nothing
+    
+
+getAutorR :: Handler Html
+getAutorR = do
+    (widget,_) <- generateFormPost formAutor
+    msg <- getMessage 
+    defaultLayout $ do
+        [whamlet|
+            $maybe mensa <- msg
+                <div>
+                    ^{mensa}
+            <form method=post action=@{AutorR}>
+                ^{widget}
+                <input type="submit" value="Cadastrar">
+        |]
+
+postAutorR :: Handler Html
+postAutorR = do
+    ((result,_),_) <- runFormPost formAutor
+    case result of
+        FormSuccess autor -> do
+            runDB $ insert autor
+            setMessage [shamlet|
+                <div>
+                    Autor enviado com sucesso!
+            |]
+            redirect AutorR
+        _ -> redirect HomeR

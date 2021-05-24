@@ -11,5 +11,10 @@
 /adm AdmR GET
 
 /adm/cadastro/autor AutorR GET POST
+/adm/apagar/#AutorId ApagarAutorR POST
+
 /adm/cadastro/categoria CategoriaR GET POST
+/adm/apagar/#CategoriaId ApagarCategoriaR POST
+
 /adm/cadastro/frase FraseR GET POST
+/adm/apagar/#FraseId ApagarFraseR POST

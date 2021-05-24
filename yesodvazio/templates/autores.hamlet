@@ -1,21 +1,15 @@
-<h1>
-    Autores
+<table>
+    <thead>
+        <tr>
+            <th>
+                AUTOR
+            <th>
 
-<a href=@{HomeR}>
-    Home
-
-<ul>
-    <li>
-        <img src=@{StaticR img_socrates_jpg}>
-            <a>
-                Sócrates
-
-    <li>
-        <img src=@{StaticR img_aristoteles_jpg}>
-            <a>
-                Aristóteles
-
-    <li>
-        <img src=@{StaticR img_platao_jpg}>
-            <a>
-                Platão
+    <tbody>
+        $forall Entity aid autor <- clientes
+            <tr>
+                <td>
+                    #{autor autor}
+                <td>
+                    <form method=post action=@{ApagarAutorR aid}>
+                        <input type="submit" value="X">

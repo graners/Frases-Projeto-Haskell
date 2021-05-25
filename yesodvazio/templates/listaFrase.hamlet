@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                FRASE
+            <th>
+                ID AUTOR
+            <th>
+                ID CATEGORIA
+            <th>
+
+    <tbody>
+        $forall Entity fid frase <- frases
+            <tr>
+                <td>
+                    #{fraseFrase frase}
+                <td>
+                    #{fraseIdAutor frase}
+                <td>
+                    #{fraseIdCategoria frase}
+                <td>
+                    <form method=post action=@{ApagarFraseR fid}>
+                        <input type="submit" value="X">

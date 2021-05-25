@@ -40,3 +40,14 @@ postCategoriaR = do
             |]
             redirect CategoriaR
         _ -> redirect HomeR
+
+
+getListaCategoriaR :: Handler Html
+getListaCategoriaR = do
+    categorias <- runDB $ selectList [] []
+    defaultLayout $(whamletFile "templates/listaCategoria.hamlet")
+
+postApagarCategoriaR :: CategoriaId -> Handler Html 
+postApagarCategoriaR cid = do
+    runDB $ delete cid
+    redirect CategoriaR

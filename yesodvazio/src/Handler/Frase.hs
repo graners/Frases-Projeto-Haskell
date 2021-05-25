@@ -40,3 +40,14 @@ postFraseR = do
             |]
             redirect FraseR
         _ -> redirect HomeR
+
+
+getListaFraseR :: Handler Html
+getListaFraseR = do
+    frases <- runDB $ selectList [] []
+    defaultLayout $(whamletFile "templates/listaFrase.hamlet")
+
+postApagarFraseR :: FraseId -> Handler Html 
+postApagarFraseR fid = do
+    runDB $ delete fid
+    redirect FraseR

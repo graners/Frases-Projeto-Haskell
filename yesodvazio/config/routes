@@ -15,6 +15,9 @@
 /autor/lista ListaAutorR GET
 
 /categoria/cadastro CategoriaR GET POST
-
+/categoria/apagar/#CategoriaId ApagarCategoriaR POST
+/categoria/lista ListaCategoriaR GET
 
 /frase/cadastro FraseR GET POST
+/frase/apagar/#FraseId ApagarFraseR POST
+/frase/lista ListaFraseR GET

@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                CATEGORIA
+            <th>
+
+    <tbody>
+        $forall Entity cid categoria <- categorias
+            <tr>
+                <td>
+                    #{categoriaCategoria categoria}
+                <td>
+                    <form method=post action=@{ApagarCategoriaR cid}>
+                        <input type="submit" value="X">

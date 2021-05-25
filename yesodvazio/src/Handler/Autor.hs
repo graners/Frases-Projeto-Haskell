@@ -52,4 +52,4 @@ getListaAutorR = do
 postApagarAutorR :: AutorId -> Handler Html 
 postApagarAutorR aid = do
     runDB $ delete aid
-    redirect AutoresR
+    redirect AutorR

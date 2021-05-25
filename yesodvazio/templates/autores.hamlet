@@ -1,0 +1,18 @@
+<h1>
+    Autores
+
+<a href=@{HomeR}>
+    Home
+
+<ul>
+    <li>
+        <a>
+            Sócrates
+
+    <li>
+        <a>
+            Aristóteles
+
+    <li>
+        <a>
+            Platão

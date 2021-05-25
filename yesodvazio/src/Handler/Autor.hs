@@ -44,10 +44,10 @@ postAutorR = do
 -- /adm/cadastro/autor AutorR GET POST
 -- /adm/#AutorId/apagar ApagarAutorR POST
 
-getAutoresR :: Handler Html
-getAutoresR = do
-    autores <- runDB $ selectList []
-    defaultLayout $(whamlet "templates/autores.hamlet")
+getListaAutorR :: Handler Html
+getListaAutorR = do
+    autores <- runDB $ selectList [] []
+    defaultLayout $(whamletFile "templates/listaAutor.hamlet")
 
 postApagarAutorR :: AutorId -> Handler Html 
 postApagarAutorR aid = do

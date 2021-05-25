@@ -10,11 +10,11 @@
 /cliente ClienteR GET POST
 /adm AdmR GET
 
-/adm/cadastro/autor AutorR GET POST
-/adm/apagar/#AutorId ApagarAutorR POST
+/autor/cadastro AutorR GET POST
+/autor/apagar/#AutorId ApagarAutorR POST
+/autor/lista ListaAutorR GET
 
-/adm/cadastro/categoria CategoriaR GET POST
-/adm/apagar/#CategoriaId ApagarCategoriaR POST
+/categoria/cadastro CategoriaR GET POST
 
-/adm/cadastro/frase FraseR GET POST
-/adm/apagar/#FraseId ApagarFraseR POST
+
+/frase/cadastro FraseR GET POST

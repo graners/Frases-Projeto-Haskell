@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                AUTOR
+            <th>
+
+    <tbody>
+        $forall Entity aid autor <- autores
+            <tr>
+                <td>
+                    #{autorAutor autor}
+                <td>
+                    <form method=post action=@{ApagarAutorR aid}>
+                        <input type="submit" value="X">

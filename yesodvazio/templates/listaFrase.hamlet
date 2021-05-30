@@ -9,6 +9,8 @@
                 ID CATEGORIA
             <th>
 
+            <th>
+
     <tbody>
         $forall Entity fid frase <- frases
             <tr>
@@ -18,6 +20,9 @@
                     #{fraseIdAutor frase}
                 <td>
                     #{fraseIdCategoria frase}
+                <td>
+                    <a href=@{EditarFraseR fid}>
+                        Editar
                 <td>
                     <form method=post action=@{ApagarFraseR fid}>
                         <input type="submit" value="X">

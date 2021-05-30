@@ -13,11 +13,14 @@
 /autor/cadastro AutorR GET POST
 /autor/apagar/#AutorId ApagarAutorR POST
 /autor/lista ListaAutorR GET
+/autor/editar/#AutorId EditarAutorR GET POST
 
 /categoria/cadastro CategoriaR GET POST
 /categoria/apagar/#CategoriaId ApagarCategoriaR POST
 /categoria/lista ListaCategoriaR GET
+/categoria/editar/#CategoriaId EditarCategoriaR GET POST
 
 /frase/cadastro FraseR GET POST
 /frase/apagar/#FraseId ApagarFraseR POST
 /frase/lista ListaFraseR GET
+/frase/editar/#FraseId EditarFraseR GET POST

@@ -8,29 +8,21 @@ module Handler.Categoria where
 
 import Import
 
-formCategoria :: Form Categoria
-formCategoria = renderDivs $ Categoria
-    <$> areq textField "Categoria:" Nothing
+formCategoria :: Maybe Categoria -> Form Categoria
+formCategoria mc = renderDivs $ Categoria
+    <$> areq textField "Categoria:" (fmap categoriaCategoria mc)
 
 
 getCategoriaR :: Handler Html
 getCategoriaR = do
-    (widget,_) <- generateFormPost formCategoria
+    (widget,_) <- generateFormPost (formCategoria Nothing)
     msg <- getMessage 
-    defaultLayout $ do
-        [whamlet|
-            $maybe mensa <- msg
-                <div>
-                    ^{mensa}
-            <form method=post action=@{CategoriaR}>
-                ^{widget}
-                <input type="submit" value="Cadastrar">
-        |]
+    defaultLayout (formWidgetCategoria widget msg CategoriaR "Cadastrar")
 
 
 postCategoriaR :: Handler Html
 postCategoriaR = do
-    ((result,_),_) <- runFormPost formCategoria
+    ((result,_),_) <- runFormPost (formCategoria Nothing)
     case result of
         FormSuccess categoria -> do
             runDB $ insert categoria
@@ -50,4 +42,27 @@ getListaCategoriaR = do
 postApagarCategoriaR :: CategoriaId -> Handler Html 
 postApagarCategoriaR cid = do
     runDB $ delete cid
-    redirect CategoriaR
+    redirect ListaCategoriaR
+
+
+getEditarCategoriaR :: CategoriaId -> Handler Html
+getEditarCategoriaR cid = do
+    categoria <- runDB $ get404 cid
+    (widget,_) <- generateFormPost (formCategoria (Just categoria))
+    msg <- getMessage 
+    defaultLayout (formWidgetCategoria widget msg (EditarCategoriaR cid) "Editar")
+
+
+postEditarCategoriaR :: CategoriaId -> Handler Html
+postEditarCategoriaR cid = do
+    _ <- runDB $ get404 cid
+    ((result,_),_) <- runFormPost (formCategoria Nothing)
+    case result of
+        FormSuccess novaCategoria -> do
+            runDB $ replace cid novaCategoria
+            redirect ListaCategoriaR
+        _ -> redirect HomeR
+
+
+formWidgetCategoria :: Widget -> Maybe Html -> Route App -> Text -> Widget
+formWidgetCategoria widget msg rota m = $(whamletFile "templates/formCategoria.hamlet")

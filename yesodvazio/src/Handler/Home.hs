@@ -33,6 +33,7 @@ getHomeR :: Handler Html
 getHomeR = do
     defaultLayout $ do
         -- css estatico (bootstrap)
+        adm <- lookupSession "_ID"
         addStylesheet (StaticR css_bootstrap_css)
         -- Javascript
         toWidgetHead $(juliusFile "templates/home.julius")

@@ -1,5 +1,5 @@
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Application.hs:
-  hash: 1728d133314cee136ff8b2999901753d723559edb140735f7fa30b5aa423f175
+  hash: 02ff3a6687c0dc8acd556878f328b0b413ef5616576e8e01d7c723b265da3973
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Autor.hs:
   hash: 0ccdbfeb56eebb2eeeec15528dd5890f69c19577f0fd6936914013ccef97a45d
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\home.julius:
@@ -13,11 +13,11 @@ C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\config\favicon.ico:
   hash: 26f64af57709ca371fe68e50a5d915661e4aa017748983906d57d00f7fc3f748
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Adm.hs:
-  hash: 838bf13e42841ffb1e308c4bbb77800518bd10d4b4898850b89eb4725e8f99cc
+  hash: 1fd47e8499e15c32549b95fbff37d1257839b9ed95b4df56b439b84a2a0c8a7c
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Calculos.hs:
   hash: 90c647dd1d0440750cfa728b3a48b6f1ed78fa68b1078ce5e1836b2bb434f31c
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\home.hamlet:
-  hash: 6003da26c2f3070802c2eacf999044c79175c4774903749ba1a72d4e951229f8
+  hash: 82d4589454c070d1cc73a053189e78c4087a7e975d838036103ccb42defa42ca
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Settings\StaticFiles.hs:
   hash: 0afdb84a9dbe874f41986518915d649ee4034374b74da113af679766da3264f8
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Foundation.hs:
@@ -27,7 +27,7 @@ C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\config\settings.yml:
   hash: 2a3097e69c555a2e6c45a9ccef467d024e4f6f15dc50aa6a1e8186b268e3a8ef
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\aulahaskell.cabal:
-  hash: f2bb024b99f37f4b83b6e99052eef9c8925ea14e21927d207a840608c9c67cbf
+  hash: 813522a6c6a62014e2616c96376627af11f643a7c38a6e49259025a30390e27e
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Categoria.hs:
   hash: d65b2998ef75ca2749f51699efab137f8df8d0efb97e715e405a6aa44be1be86
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\listaAutor.hamlet:
@@ -55,7 +55,7 @@ C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\frases.hamlet:
   hash: d53faf6a92eb548b41fd6006e893cd3a3bad1275ee8488dcd08c92b157573d0a
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Home.hs:
-  hash: 9d54f0a9e921d8a9dd2614fa0e2b31197768ff0ed8480f4f790850d4228d4475
+  hash: c464765c769eae9940be51df00bde854c2805e9a32367a0545634b00d8bf228c
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Import\NoFoundation.hs:
   hash: 0ea0cd195d52cc53173482ef8bc283aacafe06895e4b4a87b8c58e7d52308663
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\package.yaml:
@@ -71,4 +71,6 @@ C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Cliente.hs:
   hash: 865f7979a579fbbf9bcc8cd4fc5cd4213ae987890f16d8dd44d5931b7b1d5594
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\config\routes:
-  hash: 7e6aacc4b66e2d2a5b8841838454b20820a0ae3990bb16bfecd7cced31edbb1d
+  hash: 993775f6fb9ff02ef4e5e9916212ff95138bd2dc48982c55c7fe8eeb7f32f28b
+C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Login.hs:
+  hash: f41a01e60be7c3eeefa86748ae9a73984d8044e42f87ed59ed42c0bca9316a0c

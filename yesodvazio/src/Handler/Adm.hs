@@ -28,17 +28,26 @@ postAdmR = do
     ((result,_),_) <- runFormPost formLogin
     case result of
         FormSuccess (adm@(Adm email senha), conf) -> do
-            if senha == conf then do
-                runDB $ insert adm
-                setMessage [shamlet|
-                    <div>
-                        Administrador inserido com sucesso!
-                |]
-                redirect AdmR
-            else do
-                setMessage [shamlet|
-                    <div>
-                        Senha e confirmação diferentes!
-                |]
-                redirect AdmR
+            admExiste <- runDB $ getBy (UniqueEmail email)
+            case admExiste of
+                Just _ -> do
+                    setMessage [shamlet|
+                        <div>
+                            E-MAIL JÁ CADASTRADO!
+                    |]
+                    redirect AdmR
+                Nothing -> do
+                    if senha == conf then do
+                        runDB $ insert adm
+                        setMessage [shamlet|
+                            <div>
+                                Administrador inserido com sucesso!
+                        |]
+                        redirect AdmR
+                    else do
+                        setMessage [shamlet|
+                            <div>
+                                Senha e confirmação diferentes!
+                        |]
+                        redirect AdmR            
         _ -> redirect HomeR

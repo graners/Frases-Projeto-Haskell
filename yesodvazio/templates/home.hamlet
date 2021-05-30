@@ -17,3 +17,41 @@
     <li>
         <a href=@{FrasesR}>
            Frases
+
+    <li>
+        <a href=@{AdmR}>
+           Cadastre-se
+
+    $maybe email <- adm
+        <li>
+            <a href=@{ListaAutorR}>
+                Lista de Autores
+
+        <li>
+            <a href=@{AutorR}>
+                Cadastro de Autores
+        
+        <li>
+            <a href=@{ListaCategoriaR}>
+                Lista de Categorias
+
+        <li>
+            <a href=@{CategoriaR}>
+                Cadastro de Categorias
+
+        <li>
+            <a href=@{ListaFraseR}>
+                Lista de Frases
+
+        <li>
+            <a href=@{FraseR}>
+                Cadastro de Frases
+
+        <li>
+            <form action=@{SairR} method=post>
+                #{email}: <input type="submit" value="Sair">
+
+    $nothing
+        <li>
+            <a href=@{AutR}>
+                Entrar

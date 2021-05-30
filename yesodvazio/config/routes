@@ -25,3 +25,5 @@
 /frase/editar/#FraseId EditarFraseR GET POST
 
 /adm/cadastro AdmR GET POST
+/adm/login AutR GET POST
+/adm/logout SairR POST

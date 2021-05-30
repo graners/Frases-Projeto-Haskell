@@ -7,6 +7,7 @@
 module Handler.Categoria where
 
 import Import
+import Handler.Auxiliar
 
 formCategoria :: Maybe Categoria -> Form Categoria
 formCategoria mc = renderDivs $ Categoria
@@ -17,7 +18,7 @@ getCategoriaR :: Handler Html
 getCategoriaR = do
     (widget,_) <- generateFormPost (formCategoria Nothing)
     msg <- getMessage 
-    defaultLayout (formWidgetCategoria widget msg CategoriaR "Cadastrar")
+    defaultLayout (formWidget widget msg CategoriaR "Cadastrar")
 
 
 postCategoriaR :: Handler Html
@@ -50,7 +51,7 @@ getEditarCategoriaR cid = do
     categoria <- runDB $ get404 cid
     (widget,_) <- generateFormPost (formCategoria (Just categoria))
     msg <- getMessage 
-    defaultLayout (formWidgetCategoria widget msg (EditarCategoriaR cid) "Editar")
+    defaultLayout (formWidget widget msg (EditarCategoriaR cid) "Editar")
 
 
 postEditarCategoriaR :: CategoriaId -> Handler Html
@@ -62,7 +63,3 @@ postEditarCategoriaR cid = do
             runDB $ replace cid novaCategoria
             redirect ListaCategoriaR
         _ -> redirect HomeR
-
-
-formWidgetCategoria :: Widget -> Maybe Html -> Route App -> Text -> Widget
-formWidgetCategoria widget msg rota m = $(whamletFile "templates/formCategoria.hamlet")

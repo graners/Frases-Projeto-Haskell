@@ -7,6 +7,7 @@
 module Handler.Frase where
 
 import Import
+import Handler.Auxiliar
 
 formFrase :: Maybe Frase -> Form Frase
 formFrase mf = renderDivs $ Frase
@@ -18,7 +19,7 @@ getFraseR :: Handler Html
 getFraseR = do
     (widget,_) <- generateFormPost (formFrase Nothing)
     msg <- getMessage 
-    defaultLayout (formWidgetFrase widget msg FraseR "Cadastrar")
+    defaultLayout (formWidget widget msg FraseR "Cadastrar")
 
 postFraseR :: Handler Html
 postFraseR = do
@@ -50,7 +51,7 @@ getEditarFraseR fid = do
     frase <- runDB $ get404 fid
     (widget,_) <- generateFormPost (formFrase (Just frase))
     msg <- getMessage 
-    defaultLayout (formWidgetFrase widget msg (EditarFraseR fid) "Editar")
+    defaultLayout (formWidget widget msg (EditarFraseR fid) "Editar")
 
 
 postEditarFraseR :: FraseId -> Handler Html
@@ -62,7 +63,3 @@ postEditarFraseR fid = do
             runDB $ replace fid novaFrase
             redirect ListaFraseR
         _ -> redirect HomeR
-
-
-formWidgetFrase :: Widget -> Maybe Html -> Route App -> Text -> Widget
-formWidgetFrase widget msg rota m = $(whamletFile "templates/formFrase.hamlet")

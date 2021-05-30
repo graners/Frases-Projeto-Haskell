@@ -7,6 +7,7 @@
 module Handler.Autor where
 
 import Import
+import Handler.Auxiliar
 
 formAutor :: Maybe Autor -> Form Autor
 formAutor ma = renderDivs $ Autor
@@ -17,7 +18,7 @@ getAutorR :: Handler Html
 getAutorR = do
     (widget,_) <- generateFormPost (formAutor Nothing)
     msg <- getMessage 
-    defaultLayout (formWidgetAutor widget msg AutorR "Cadastrar")
+    defaultLayout (formWidget widget msg AutorR "Cadastrar")
 
 postAutorR :: Handler Html
 postAutorR = do
@@ -50,7 +51,7 @@ getEditarAutorR aid = do
     autor <- runDB $ get404 aid
     (widget,_) <- generateFormPost (formAutor (Just autor))
     msg <- getMessage 
-    defaultLayout (formWidgetAutor widget msg (EditarAutorR aid) "Editar")
+    defaultLayout (formWidget widget msg (EditarAutorR aid) "Editar")
         
 
 postEditarAutorR :: AutorId -> Handler Html
@@ -62,7 +63,3 @@ postEditarAutorR aid = do
             runDB $ replace aid novoAutor
             redirect ListaAutorR
         _ -> redirect HomeR
-
-
-formWidgetAutor :: Widget -> Maybe Html -> Route App -> Text -> Widget
-formWidgetAutor widget msg rota m = $(whamletFile "templates/formAutor.hamlet")

@@ -8,7 +8,6 @@
 /autores AutoresR GET
 /frases FrasesR GET
 /cliente ClienteR GET POST
-/adm AdmR GET
 
 /autor/cadastro AutorR GET POST
 /autor/apagar/#AutorId ApagarAutorR POST
@@ -24,3 +23,5 @@
 /frase/apagar/#FraseId ApagarFraseR POST
 /frase/lista ListaFraseR GET
 /frase/editar/#FraseId EditarFraseR GET POST
+
+/adm/cadastro AdmR GET POST

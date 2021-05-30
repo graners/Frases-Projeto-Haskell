@@ -28,11 +28,6 @@ getFrasesR = do
     defaultLayout $ do
         $(whamletFile "templates/frases.hamlet")
 
-getAdmR :: Handler Html
-getAdmR = do
-    defaultLayout $ do
-        $(whamletFile "templates/adm.hamlet")
-
 
 getHomeR :: Handler Html
 getHomeR = do

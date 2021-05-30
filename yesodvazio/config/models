@@ -19,3 +19,9 @@ Frase
     idAutor Int
     idCategoria Int
     deriving Show
+
+Adm
+    email Text
+    senha Text
+    UniqueEmail email
+    deriving Show

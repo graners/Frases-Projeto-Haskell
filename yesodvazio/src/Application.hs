@@ -43,6 +43,7 @@ import Handler.Autor
 import Handler.Cliente
 import Handler.Frase
 import Handler.Categoria
+import Handler.Adm
 
 -- This line actually creates our YesodDispatch instance. It is the second half
 -- of the call to mkYesodData which occurs in Foundation.hs. Please see the

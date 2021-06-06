@@ -7,7 +7,6 @@
 /categorias CategoriasR GET
 /autores AutoresR GET
 /frases FrasesR GET
-/cliente ClienteR GET POST
 
 /autor/cadastro AutorR GET POST
 /autor/apagar/#AutorId ApagarAutorR POST

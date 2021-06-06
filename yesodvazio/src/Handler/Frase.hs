@@ -8,12 +8,23 @@ module Handler.Frase where
 
 import Import
 import Handler.Auxiliar
+import Database.Persist.Postgresql
 
 formFrase :: Maybe Frase -> Form Frase
 formFrase mf = renderDivs $ Frase
     <$> areq textField "Frase: " (fmap fraseFrase mf)
-    <*> areq intField "ID do autor: " (fmap fraseIdAutor mf)
-    <*> areq intField "ID da categoria: " (fmap fraseIdCategoria mf)
+    <*> areq (selectField autCB) "Autor: " Nothing
+    <*> areq (selectField catCB) "Autor: " Nothing
+
+autCB = do
+    autores <- runDB $ selectList [] [Asc AutorAutor]
+    optionsPairs $
+        map (\r -> (autorAutor $ entityVal r, entityKey r)) autores
+
+catCB = do
+    categorias <- runDB $ selectList [] [Asc CategoriaCategoria]
+    optionsPairs $
+        map (\r -> (categoriaCategoria $ entityVal r, entityKey r)) categorias
 
 getFraseR :: Handler Html
 getFraseR = do
@@ -37,6 +48,21 @@ postFraseR = do
 
 getListaFraseR :: Handler Html
 getListaFraseR = do
+    -- let sql = "SELECT ??,??,?? FROM frase \
+    --     \ INNER JOIN autor ON autor.id = frase.autid \
+    --     \ INNER JOIN categoria ON categoria.id = frase.catid \
+    --     \ WHERE frase.id = ?"
+    -- frase <- runDB $ get404 fid
+    -- tudo <- rumDB $ rawSql sql [toPersistValue fid] :: Handler [(Entity Frase, Entity Autor, Entity Categoria)]
+    -- defaultLayout $ do
+    --     [whamlet|
+    --        <h1>
+    --            Frases
+    --        <ul>
+    --            $forall (Entity _ frase, Entity _ _, Entity _ _) <- tudo
+    --                <li>
+    --                    #{fraseFrase frase}
+    --    |]
     frases <- runDB $ selectList [] []
     defaultLayout $(whamletFile "templates/listaFrase.hamlet")
 

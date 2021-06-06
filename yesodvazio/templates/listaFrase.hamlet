@@ -17,10 +17,6 @@
                 <td>
                     #{fraseFrase frase}
                 <td>
-                    #{fraseIdAutor frase}
-                <td>
-                    #{fraseIdCategoria frase}
-                <td>
                     <a href=@{EditarFraseR fid}>
                         Editar
                 <td>

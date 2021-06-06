@@ -16,8 +16,8 @@ Categoria
 
 Frase
     frase Text
-    idAutor Int
-    idCategoria Int
+    autid AutorId
+    catid CategoriaId
     deriving Show
 
 Adm

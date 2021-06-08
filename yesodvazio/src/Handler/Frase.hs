@@ -48,21 +48,6 @@ postFraseR = do
 
 getListaFraseR :: Handler Html
 getListaFraseR = do
-    -- let sql = "SELECT ??,??,?? FROM frase \
-    --     \ INNER JOIN autor ON autor.id = frase.autid \
-    --     \ INNER JOIN categoria ON categoria.id = frase.catid \
-    --     \ WHERE frase.id = ?"
-    -- frase <- runDB $ get404 fid
-    -- tudo <- rumDB $ rawSql sql [toPersistValue fid] :: Handler [(Entity Frase, Entity Autor, Entity Categoria)]
-    -- defaultLayout $ do
-    --     [whamlet|
-    --        <h1>
-    --            Frases
-    --        <ul>
-    --            $forall (Entity _ frase, Entity _ _, Entity _ _) <- tudo
-    --                <li>
-    --                    #{fraseFrase frase}
-    --    |]
     frases <- runDB $ selectList [] []
     defaultLayout $(whamletFile "templates/listaFrase.hamlet")
 

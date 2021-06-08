@@ -4,21 +4,8 @@
 <a href=@{HomeR}>
     Home
 
-<table>
-    <thead>
-        <tr>
-            <th>
-                FRASE
-            <th>
-                ID AUTOR
-            <th>
-                ID CATEGORIA
-            <th>
-
-            <th>
-
-    <tbody>
-        $forall Entity _ frase <- frases
-            <tr>
-                <td>
-                    #{fraseFrase frase}
+<ul>
+    $forall (Entity _ frase, Entity _ autor, Entity _ categoria) <- tudo
+        <li>
+            #{fraseFrase frase} - #{autorAutor autor} - #{categoriaCategoria categoria}
+                    

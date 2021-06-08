@@ -9,6 +9,7 @@ module Handler.Home where
 import Import
 import Text.Lucius
 import Text.Julius
+import Database.Persist.Postgresql
 --import Network.HTTP.Types.Status
 --import Database.Persist.Postgresql
 
@@ -24,9 +25,11 @@ getAutoresR = do
 
 getFrasesR :: Handler Html
 getFrasesR = do
-    frases <- runDB $ selectList [] []
+    let sql = "SELECT ??,??,?? FROM frase \
+        \ INNER JOIN autor ON autor.id = frase.autid \
+        \ INNER JOIN categoria ON categoria.id = frase.catid "
+    tudo <- runDB $ rawSql sql [] :: Handler [(Entity Frase, Entity Autor, Entity Categoria)]
     defaultLayout $(whamletFile "templates/frases.hamlet")
-
 
 getHomeR :: Handler Html
 getHomeR = do

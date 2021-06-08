@@ -14,7 +14,7 @@ formFrase :: Maybe Frase -> Form Frase
 formFrase mf = renderDivs $ Frase
     <$> areq textField "Frase: " (fmap fraseFrase mf)
     <*> areq (selectField autCB) "Autor: " Nothing
-    <*> areq (selectField catCB) "Autor: " Nothing
+    <*> areq (selectField catCB) "Categoria: " Nothing
 
 autCB = do
     autores <- runDB $ selectList [] [Asc AutorAutor]

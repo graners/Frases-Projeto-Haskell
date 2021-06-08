@@ -6,15 +6,14 @@
 
 <br>
 
-<ul>
-    <li>
-        <a>
-            Frases Inteligentes
+<table>
+    <thead>
+        <tr>
+            <th>
+                
 
-    <li>
-        <a>
-            Frases de Reflexão
-
-    <li>
-        <a>
-            Frases Motivacionais
+    <tbody>
+        $forall Entity _ categoria <- categorias
+            <tr>
+                <td>
+                    #{categoriaCategoria categoria}

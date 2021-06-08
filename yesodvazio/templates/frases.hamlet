@@ -4,15 +4,21 @@
 <a href=@{HomeR}>
     Home
 
-<ul>
-    <li>
-        <p>
-            Só sei que nada sei. (Sócrates)
+<table>
+    <thead>
+        <tr>
+            <th>
+                FRASE
+            <th>
+                ID AUTOR
+            <th>
+                ID CATEGORIA
+            <th>
 
-    <li>
-        <p>
-            A esperança é o sonho do homem acordado. (Aristóteles)
+            <th>
 
-    <li>
-        <p>
-            Não espere por uma crise para descobrir o que é importante em sua vida. (Platão)
+    <tbody>
+        $forall Entity _ frase <- frases
+            <tr>
+                <td>
+                    #{fraseFrase frase}

@@ -14,19 +14,18 @@ import Text.Julius
 
 getCategoriasR :: Handler Html
 getCategoriasR = do
-    defaultLayout $ do
-        $(whamletFile "templates/categorias.hamlet")
+    categorias <- runDB $ selectList [] []
+    defaultLayout $(whamletFile "templates/categorias.hamlet")
 
 getAutoresR :: Handler Html
 getAutoresR = do
-    defaultLayout $ do
-        $(whamletFile "templates/autores.hamlet")
-        toWidgetHead $(luciusFile "templates/autores.lucius")
+    autores <- runDB $ selectList [] []
+    defaultLayout $(whamletFile "templates/autores.hamlet")
 
 getFrasesR :: Handler Html
 getFrasesR = do
-    defaultLayout $ do
-        $(whamletFile "templates/frases.hamlet")
+    frases <- runDB $ selectList [] []
+    defaultLayout $(whamletFile "templates/frases.hamlet")
 
 
 getHomeR :: Handler Html

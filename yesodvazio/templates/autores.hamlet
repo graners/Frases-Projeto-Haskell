@@ -4,15 +4,15 @@
 <a href=@{HomeR}>
     Home
 
-<ul>
-    <li>
-        <a>
-            Sócrates
+<table>
+    <thead>
+        <tr>
+            <th>
+                
 
-    <li>
-        <a>
-            Aristóteles
 
-    <li>
-        <a>
-            Platão
+    <tbody>
+        $forall Entity _ autor <- autores
+            <tr>
+                <td>
+                    #{autorAutor autor}

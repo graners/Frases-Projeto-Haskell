@@ -1,26 +1,33 @@
+<div class="top">
+    <p>
+
 <h1>
     FRASES QUE INSPIRAM
 
-<ul>
-    <li>
-        <a href=@{HomeR}>
-            Home
+<table>
+    <tr>
+        <td>
+            <a href=@{HomeR}>
+                Home
+    
+            <td>
+                <a href=@{CategoriasR}>
+                    Categorias
 
-    <li>
-        <a href=@{CategoriasR}>
-           Categorias
+    <tr>
+        <td>
+            <a href=@{AutoresR}>
+                Autores
 
-    <li>
-        <a href=@{AutoresR}>
-           Autores
+    
+        <td>
+            <a href=@{FrasesR}>
+                Frases
 
-    <li>
-        <a href=@{FrasesR}>
-           Frases
-
-    <li>
-        <a href=@{AdmR}>
-           Cadastre-se
+    <tr>
+        <td>
+            <a href=@{AdmR}>
+                Cadastre-se
 
     $maybe email <- adm
         <li>
@@ -52,6 +59,10 @@
                 #{email}: <input type="submit" value="Sair">
 
     $nothing
-        <li>
+        <td>
             <a href=@{AutR}>
                 Entrar
+
+<div class="footer">
+    <p>
+        ©2021 Haskell Project

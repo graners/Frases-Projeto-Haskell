@@ -9,6 +9,7 @@ module Handler.Frase where
 import Import
 import Handler.Auxiliar
 import Database.Persist.Postgresql
+import Text.Lucius
 
 formFrase :: Maybe Frase -> Form Frase
 formFrase mf = renderDivs $ Frase
@@ -49,7 +50,9 @@ postFraseR = do
 getListaFraseR :: Handler Html
 getListaFraseR = do
     frases <- runDB $ selectList [] []
-    defaultLayout $(whamletFile "templates/listaFrase.hamlet")
+    defaultLayout $ do 
+        toWidgetHead $(luciusFile "templates/frases.lucius")
+        $(whamletFile "templates/listaFrase.hamlet")
 
 postApagarFraseR :: FraseId -> Handler Html 
 postApagarFraseR fid = do

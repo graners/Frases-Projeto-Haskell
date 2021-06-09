@@ -8,6 +8,7 @@ module Handler.Autor where
 
 import Import
 import Handler.Auxiliar
+import Text.Lucius
 
 formAutor :: Maybe Autor -> Form Autor
 formAutor ma = renderDivs $ Autor
@@ -37,7 +38,9 @@ postAutorR = do
 getListaAutorR :: Handler Html
 getListaAutorR = do
     autores <- runDB $ selectList [] []
-    defaultLayout $(whamletFile "templates/listaAutor.hamlet")
+    defaultLayout $ do 
+        toWidgetHead $(luciusFile "templates/autores.lucius")
+        $(whamletFile "templates/listaAutor.hamlet")
 
 
 postApagarAutorR :: AutorId -> Handler Html 

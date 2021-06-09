@@ -8,6 +8,7 @@ module Handler.Categoria where
 
 import Import
 import Handler.Auxiliar
+import Text.Lucius
 
 formCategoria :: Maybe Categoria -> Form Categoria
 formCategoria mc = renderDivs $ Categoria
@@ -38,7 +39,9 @@ postCategoriaR = do
 getListaCategoriaR :: Handler Html
 getListaCategoriaR = do
     categorias <- runDB $ selectList [] []
-    defaultLayout $(whamletFile "templates/listaCategoria.hamlet")
+    defaultLayout $ do 
+        toWidgetHead $(luciusFile "templates/categorias.lucius") 
+        $(whamletFile "templates/listaCategoria.hamlet")
 
 postApagarCategoriaR :: CategoriaId -> Handler Html 
 postApagarCategoriaR cid = do

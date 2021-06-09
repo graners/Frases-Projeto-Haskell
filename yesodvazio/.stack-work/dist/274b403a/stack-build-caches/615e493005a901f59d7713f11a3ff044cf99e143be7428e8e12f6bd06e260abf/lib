@@ -1,7 +1,7 @@
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Application.hs:
   hash: 7f4006eb43448debe38d1a8dcd7e6a11cfe28c85f5cb0765b1b1961c3e44ece1
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Autor.hs:
-  hash: 0ccdbfeb56eebb2eeeec15528dd5890f69c19577f0fd6936914013ccef97a45d
+  hash: d3d985df413d4d77d620223271a43412001baa593a167b87d043b6e90ec604b7
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\home.julius:
   hash: c7a3dc3ba9f7e4dab7f44895fab109674f38f5552e6916a4939f28f906094c8f
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\listaCategoria.hamlet:
@@ -27,7 +27,7 @@ C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\aulahaskell.cabal:
   hash: 173df842bc4c2f21e724219a8a9067acc572811ae11319c0525b718801d200c0
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Categoria.hs:
-  hash: d65b2998ef75ca2749f51699efab137f8df8d0efb97e715e405a6aa44be1be86
+  hash: b0ef854c4d99007fc4f88f732ffb4201267dad57b15cfcc3e2c2e57e609bb186
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\listaAutor.hamlet:
   hash: 3665d626a8dcf74c46f9812091c2b1c1e3188e65148345e9b3792ee91aef136d
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Settings.hs:
@@ -37,7 +37,7 @@ C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio
 ? C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\.stack-work\dist\274b403a\build\autogen\Paths_aulahaskell.hs
 : hash: a46a2a86cc078cb9b154b1511ce72566e261559499fe21f73510c9b88a772d34
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Frase.hs:
-  hash: 6551cb2c3b8005cc25bb9305b5c1d540207ddc4c70446accff00bf25482296fa
+  hash: 28fdd5d65d4ed735fd5cf2e1a6057434e641c2aa78351ffe4c499669853083dc
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Model.hs:
   hash: d2788bfc0fd286bb229d99fd71805826c53db206fe31573712860b44623d3188
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Auxiliar.hs:
@@ -46,16 +46,20 @@ C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio
   hash: c605f8e84f5e61540f35bc46f1a2c4cdc002b0dc16b32be4f939848dd4805371
 ? C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\.stack-work\dist\274b403a\build\autogen\cabal_macros.h
 : hash: d103744cab8f4a852f2c9d5963148904ec4ecdb959a55a5c5bf7338e80b13ab1
+C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\autores.lucius:
+  hash: f3ddf6f5d4946d99e35c78c6a379f3c2b6f0678ea06e4001465e7888c4f87ef9
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\config\robots.txt:
   hash: 7e28fc38624619b8f8046d91f5085e8565055d0feb27af2ebb8df20b9f6f5060
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\frases.hamlet:
   hash: d51cca84a19e7bd02095b8807d4ad2c2f248a9cf4bf47150778371912191234f
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Home.hs:
-  hash: 2a4e6208389740c5de3713dda659308c82ac9bc99d756eeeeb1f798395779cbb
+  hash: b0f643623450059078195c035ad70fc93d575e605cf345310ad1e66e63c71022
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Import\NoFoundation.hs:
   hash: 0ea0cd195d52cc53173482ef8bc283aacafe06895e4b4a87b8c58e7d52308663
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\package.yaml:
   hash: 021fa3319fdcf84ac38872fd4c0ae6e13e819e381f6cdb547aa9947bfb0fa27f
+C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\categorias.lucius:
+  hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Import.hs:
   hash: cbb5e147e8b0d300e678aeed69fd48c040286f33c1bf98267eef11171943de55
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\form.hamlet:
@@ -66,5 +70,7 @@ C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio
   hash: 19280edea0ecf04843e66bed626e8187dddc0c55a9cc8b54b2f7d853317e7012
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\config\routes:
   hash: 8deb38cc63e1047cccb3d6be8435d55ecc90feade85ebee87a8d2f3e28890a75
+C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\templates\frases.lucius:
+  hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 C:\Users\steff\Desktop\Haskell\Projeto-Haskell\Frases-Projeto-Haskell\yesodvazio\src\Handler\Login.hs:
   hash: f41a01e60be7c3eeefa86748ae9a73984d8044e42f87ed59ed42c0bca9316a0c

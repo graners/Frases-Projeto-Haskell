@@ -16,12 +16,16 @@ import Database.Persist.Postgresql
 getCategoriasR :: Handler Html
 getCategoriasR = do
     categorias <- runDB $ selectList [] []
-    defaultLayout $(whamletFile "templates/categorias.hamlet")
+    defaultLayout $ do
+        toWidgetHead $(luciusFile "templates/categorias.lucius")
+        $(whamletFile "templates/categorias.hamlet")
 
 getAutoresR :: Handler Html
 getAutoresR = do
     autores <- runDB $ selectList [] []
-    defaultLayout $(whamletFile "templates/autores.hamlet")
+    defaultLayout $ do
+        toWidgetHead $(luciusFile "templates/autores.lucius")
+        $(whamletFile "templates/autores.hamlet")
 
 getFrasesR :: Handler Html
 getFrasesR = do
@@ -29,7 +33,9 @@ getFrasesR = do
         \ INNER JOIN autor ON autor.id = frase.autid \
         \ INNER JOIN categoria ON categoria.id = frase.catid "
     tudo <- runDB $ rawSql sql [] :: Handler [(Entity Frase, Entity Autor, Entity Categoria)]
-    defaultLayout $(whamletFile "templates/frases.hamlet")
+    defaultLayout $ do
+        toWidgetHead $(luciusFile "templates/frases.lucius")    
+        $(whamletFile "templates/frases.hamlet")
 
 getHomeR :: Handler Html
 getHomeR = do

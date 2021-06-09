@@ -1,3 +1,6 @@
+<a href=@{HomeR}>
+    Home
+
 <table>
     <thead>
         <tr>

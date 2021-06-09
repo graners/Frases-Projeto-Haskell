@@ -1,3 +1,6 @@
+<a href=@{HomeR}>
+    Home
+
 $maybe mensa <- msg
     <div>
         ^{mensa}

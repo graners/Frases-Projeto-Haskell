@@ -8,21 +8,14 @@ h1{
     text-shadow: 2px 2px 2px grey;
 }
 
-a:link {
-    color: blue;
+a {
+    color: #505050;
 }
 
-a:visited {
-    color: silver;
-}
 
 a:hover {
     color: black;
     background: #ddd;
-}
-
-a:active {
-    color: blue;
 }
 
 img {
@@ -44,6 +37,7 @@ table, th, td {
 table {
   width: 100%;
   padding-top: 50px;
+  padding-bottom: 150px
 }
 
 .footer {
@@ -58,8 +52,8 @@ table {
 }
 
 .top {
-   height: 60px;
    position: fixed;
+   height: 50px;
    top: 0;
    width: 100%;
    background-color: black;

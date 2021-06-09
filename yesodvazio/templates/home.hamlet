@@ -25,44 +25,54 @@
             <a href=@{FrasesR}>
                 Frases
 
-    <tr>
-        <td>
-            <a href=@{AdmR}>
-                Cadastre-se
+        
 
     $maybe email <- adm
-        <li>
-            <a href=@{ListaAutorR}>
-                Lista de Autores
+        <div class="admin">
+            
+                <tr>
+                    <td>
+                        <a href=@{ListaAutorR}>
+                            Editar Autor
 
-        <li>
-            <a href=@{AutorR}>
-                Cadastro de Autores
-        
-        <li>
-            <a href=@{ListaCategoriaR}>
-                Lista de Categorias
+                
+                    <td>
+                        <a href=@{AutorR}>
+                            Cadastro de Autores
 
-        <li>
-            <a href=@{CategoriaR}>
-                Cadastro de Categorias
+                <tr>
+                    <td>
+                        <a href=@{ListaCategoriaR}>
+                            Editar Categoria
 
-        <li>
-            <a href=@{ListaFraseR}>
-                Lista de Frases
+                    <td>
+                        <a href=@{CategoriaR}>
+                            Cadastro de Categorias
 
-        <li>
-            <a href=@{FraseR}>
-                Cadastro de Frases
+                <tr>
+                    <td>
+                        <a href=@{ListaFraseR}>
+                            Editar Frase
 
-        <li>
-            <form action=@{SairR} method=post>
-                #{email}: <input type="submit" value="Sair">
+                    <td>
+                        <a href=@{FraseR}>
+                            Cadastro de Frases
+
+                <tr>
+                    <td>
+                        <a href=@{AdmR}>
+                            Cadastrar Admin
+                    
+                    
+                    <td>
+                        <form action=@{SairR} method=post>
+                            #{email}: <input type="submit" value="Sair">
 
     $nothing
-        <td>
-            <a href=@{AutR}>
-                Entrar
+        
+            <td>
+                <a href=@{AutR}>
+                    Entrar
 
 <div class="footer">
     <p>

@@ -1,3 +1,6 @@
+<div class="top">
+    <p>
+
 <h1>
     Autores
 
@@ -16,3 +19,6 @@
             <tr>
                 <td>
                     #{autorAutor autor}
+
+<div class="footer">
+    <p>©2021 Haskell Project
